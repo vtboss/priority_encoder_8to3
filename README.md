@@ -94,12 +94,6 @@ The design can be easily extended for:
 - **Advanced Verification**: Constrained random testing, functional coverage analysis
 - **Implementation Variants**: Registered outputs, asynchronous operation
 
-## 📚 Documentation
-
-For detailed technical analysis, implementation methodology, and performance characterization, see:
-- [Design Report](docs/design_report.md) - Complete technical documentation
-- [Simulation Guide](docs/simulation_guide.md) - Step-by-step simulation instructions
-
 ## 🏆 Professional Impact
 
 This project showcases essential skills for:
