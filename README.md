@@ -54,22 +54,7 @@ This project demonstrates professional VLSI/RTL design methodology by implementi
    git clone https://github.com/vtboss/priority_encoder_8to3.git
    cd priority_encoder_8to3
    ```
-
-2. **Compile**
-   ```tcl
-   vlog priority_encoder_behav.v
-   vlog priority_encoder_struct.v  
-   vlog priority_encoder_tb.v
-   ```
-
-3. **Run Simulation**
-   ```tcl
-   vsim priority_encoder_tb
-   add wave *
-   run -all
-   ```
-
-4. **View Results**
+2. **View Results**
    - Check console output for functional verification results
    - Analyze waveforms in ModelSim Wave window
    - Review timing characteristics and signal transitions
