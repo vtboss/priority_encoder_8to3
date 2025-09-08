@@ -55,11 +55,11 @@ This project demonstrates professional VLSI/RTL design methodology by implementi
    cd priority_encoder_8to3
    ```
 
-2. **Compile in ModelSim**
+2. **Compile**
    ```tcl
-   vlog src/priority_encoder_behav.v
-   vlog src/priority_encoder_struct.v  
-   vlog src/priority_encoder_tb.v
+   vlog priority_encoder_behav.v
+   vlog priority_encoder_struct.v  
+   vlog priority_encoder_tb.v
    ```
 
 3. **Run Simulation**
