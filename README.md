@@ -1,113 +1,73 @@
-# 8-to-3 Priority Encoder Implementation
+# vtboss-priority_encoder_8to3
 
-A comprehensive Verilog HDL implementation of an 8-to-3 priority encoder featuring both behavioral and structural modeling approaches, complete with thorough verification and timing analysis.
+## Overview
+This repository currently contains a single README file, which serves as the primary documentation for the project. As of now, there are no code files, functions, or classes implemented. This README will guide you through setting up the environment, understanding the architecture (once code is added), using the API (if applicable), and contributing to the project workflow.
 
-## 📋 Project Overview
-
-This project demonstrates professional VLSI/RTL design methodology by implementing a priority encoder that converts 8 input lines to a 3-bit binary output, where input 7 has the highest priority and input 0 has the lowest priority. When multiple inputs are active simultaneously, the encoder outputs the binary representation of the highest priority active input.
-
-## 🚀 Key Features
-
-- **Dual Implementation Approaches**: Both behavioral (case-based) and structural modeling
-- **Comprehensive Verification**: Complete testbench covering all edge cases and priority scenarios  
-- **Professional Documentation**: Industry-standard design flow and documentation
-- **EDA Tool Integration**: Optimized for Xilinx Vivado
-- **Timing Analysis**: Detailed propagation delay and performance characterization
-
-## 🏗️ Architecture
-
-### Behavioral Model (`priority_encoder_behav.v`)
-- Uses `casez` statements with don't-care conditions for efficient priority logic
-- Combinational logic with `always @(*)` block
-- Includes validity flag for input status indication
-
-### Structural Model (`priority_encoder_struct.v`) 
-- Implements priority logic using conditional assignment operators
-- Gate-level thinking with assign statements
-- Demonstrates alternative RTL coding style
-
-### Comprehensive Testbench (`priority_encoder_tb.v`)
-- **Edge Case Testing**: All-zero input conditions
-- **Boundary Testing**: Individual input verification  
-- **Priority Verification**: Multiple simultaneous input scenarios
-- **Model Comparison**: Automated verification between behavioral and structural implementations
-- **Waveform Generation**: VCD file output for detailed timing analysis
-
-
-## 🛠️ Tools & Technologies
-
-- **HDL**: Verilog HDL
-- **Simulation**: Xilinx Vivado 2018.1, ModelSim-Intel FPGA
-- **Verification**: Custom testbench with automated checking
-- **Documentation**: Professional technical reporting
-
-## ⚡ Quick Start
+## Setup
 
 ### Prerequisites
-- Xilinx Vivado (2018.1)
-- Basic knowledge of Verilog HDL
+- Ensure you have a compatible development environment set up.
+- Install any necessary tools or SDKs required for the project.
 
-### Running the Simulation
-
-1. **Clone the Repository**
+### Steps
+1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/vtboss/priority_encoder_8to3.git
-   cd priority_encoder_8to3
+   git clone https://github.com/your-repo/vtboss-priority_encoder_8to3.git
+   cd vtboss-priority_encoder_8to3
    ```
-2. **View Results**
-   - Check console output for functional verification results
-   - Analyze waveforms in ModelSim Wave window
-   - Review timing characteristics and signal transitions
 
-## 📊 Simulation Results
+2. **Install Dependencies:**
+   - Since there are no code files yet, this step will be updated once dependencies are defined.
 
-The testbench provides comprehensive verification including:
+3. **Configure Environment Variables:**
+   - Create a `.env` file in the root directory.
+   - Add necessary environment variables as specified in the `.env.example` file (if provided).
 
-- ✅ **Functional Verification**: All 256 possible input combinations tested
-- ✅ **Priority Logic Validation**: Highest priority input always dominates output
-- ✅ **Model Equivalence**: Behavioral and structural models produce identical results
-- ✅ **Timing Characterization**: Propagation delays measured and documented
-- ✅ **Edge Case Handling**: Proper response to all-zero and all-one inputs
+4. **Start the Application:**
+   - Once the application code is added, you can start it using a command like:
+     ```bash
+     npm start
+     ```
+   - This step will be updated with the correct command once the application code is available.
 
-## 🎯 Learning Outcomes
+## Architecture
 
-This project demonstrates proficiency in:
+### Current State
+- **No Source Code Files:** The repository currently only contains this README file. Architecture details will be added once code is implemented.
 
-- **RTL Design Methodologies**: Multiple modeling approaches in Verilog
-- **Verification Techniques**: Systematic testbench development and validation
-- **EDA Tool Usage**: Professional simulation and analysis workflows  
-- **Digital Logic Design**: Priority encoding and combinational circuit implementation
-- **Technical Documentation**: Industry-standard project documentation practices
+### Future Considerations
+- **Modular Design:** Plan to structure the codebase into modules to improve maintainability and scalability.
+- **API Layer:** Consider implementing an API layer for better interaction with the system.
 
-## 📈 Performance Characteristics
+## API Usage
 
-- **Logic Depth**: Optimized combinational logic implementation
-- **Propagation Delay**: Characterized across all input-output paths
-- **Resource Utilization**: Efficient logic utilization for FPGA implementation
-- **Scalability**: Design principles applicable to larger encoder implementations
+### Current State
+- **No API Implemented:** There are no APIs available for interaction at this time. This section will be updated once the API is implemented.
 
-## 🔧 Customization & Extensions
+### Future Considerations
+- **RESTful API:** Plan to implement a RESTful API for CRUD operations.
+- **Documentation:** Use tools like Swagger or Postman to document the API endpoints.
 
-The design can be easily extended for:
-- **Parameterizable Width**: Configurable input/output bit widths
-- **Additional Features**: Enable signals, interrupt handling, power optimization
-- **Advanced Verification**: Constrained random testing, functional coverage analysis
-- **Implementation Variants**: Registered outputs, asynchronous operation
+## Workflow
 
-## 🏆 Professional Impact
+### Contribution Guidelines
+- **Code Style:** Follow the established code style guidelines (if any) or propose new ones.
+- **Pull Requests:** Submit pull requests for any changes or additions. Ensure your code is well-tested and documented.
+- **Code Reviews:** Participate in code reviews to maintain code quality.
 
-This project showcases essential skills for:
-- **VLSI Design Engineer** roles
-- **RTL Design** positions  
-- **Verification Engineer** opportunities
-- **FPGA Development** careers
+### File References
+- **README.md:** `/opt/render/project/src/data/workspaces/8873e33c-2ff6-4dd4-9b9f-d7b05c982b73/vtboss-priority_encoder_8to3-99de65e/README.md`
+  - Role: Support/configuration module.
+  - Imports: None.
 
-**Technologies Demonstrated**: Verilog HDL • Digital Design • Functional Verification • EDA Tools • RTL Synthesis • Timing Analysis
+### Change Guide
+- **Documentation Updates:** Edit the README.md file for any documentation changes.
+  - Path: `/opt/render/project/src/data/workspaces/8873e33c-2ff6-4dd4-9b9f-d7b05c982b73/vtboss-priority_encoder_8to3-99de65e/README.md`
+
+## Persona Notes
+- **Conceptual Clarity:** Balance conceptual explanations with practical examples to enhance understanding.
+- **Immediate Usefulness:** Ensure that the information provided is actionable and immediately useful for contributors.
 
 ---
 
-**Author**: vtboss  
-**Course**: Digital Design Laboratory  
-**Institution**: Electronics and Communication Engineering  
-**Tools**: Xilinx Vivado 2018.1
-*This project represents professional-level VLSI design methodology and serves as a foundation for advanced digital system implementation.*
+This README will be updated as the project evolves, adding more detailed sections on architecture, API usage, and workflow once the codebase is developed.
